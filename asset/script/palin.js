@@ -8,11 +8,11 @@ document.getElementById("btn").addEventListener("click",function(){
 
     let txt_new = txt.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     let len = txt_new.length;
-    let halfLen = Math.floor( len/2 );
+    let halfLength = Math.floor( len/2 );
     let result =document.getElementById("result");
     let i;
   
-    for( i = 0; i < halfLen; i++){
+    for( i = 0; i < halfLength; i++){
         if( txt_new[i] !== txt_new[len-1-i]){
             result.textContent = "Not a palindrome";
             return;
